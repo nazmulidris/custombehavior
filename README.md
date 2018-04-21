@@ -1,4 +1,4 @@
-#custombehavior
+# custombehavior
 
 Two examples of custom `Behavior`s with `FloatingActionButton` and `CoordinatorLayout`.
 
