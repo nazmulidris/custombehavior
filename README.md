@@ -1,10 +1,11 @@
+#custombehavior
+
 Two examples of custom `Behavior`s with `FloatingActionButton` and `CoordinatorLayout`.
 
-Screenshot of app in action
+# Screenshot of app in action
+<img src="https://raw.githubusercontent.com/nazmulidris/custombehavior/master/docs/screenshot.gif" width="400">
 
-![](https://raw.githubusercontent.com/nazmulidris/custombehavior/master/docs/screenshot.gif)
-
-Relevant articles:
+#Relevant articles:
 - [Intercepting everything w/ CoordinatorLayout Behaviors](https://goo.gl/oLH8pm)
 - [Appbar scrolling behaviors](https://goo.gl/B9Fr1K)
 - [CoordinatorLayout docs](https://goo.gl/bw4s5g)
