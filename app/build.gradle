@@ -15,12 +15,13 @@
  */
 
 apply plugin: 'com.android.application'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 'android-P'
 
     defaultConfig {
-        applicationId "com.bignerdranch.android.custombehavior"
+        applicationId "engineering.uxd.example.custombehavior"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
@@ -29,10 +30,13 @@ android {
 }
 
 ext {
-    support_version = '27.0.2'
+    anko_version = '0.10.4'
+    support_version = '27.1.1'
 }
 
 dependencies {
     implementation "com.android.support:appcompat-v7:$support_version"
     implementation "com.android.support:design:$support_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.anko:anko:$anko_version"
 }

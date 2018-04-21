@@ -15,24 +15,34 @@
   -->
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:id="@+id/container"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="match_parent"
-                                                 tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="engineering.uxd.example.custombehavior.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab_rotate"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_gravity="bottom|right|end"
-        android:src="@android:drawable/stat_sys_warning"
+        android:src="@android:drawable/ic_menu_rotate"
         android:layout_margin="8dp"
         android:clickable="true"
-        app:layout_behavior="com.bignerdranch.android.custombehavior.RotateBehavior" />
+        app:layout_behavior="engineering.uxd.example.custombehavior.RotateBehavior" />
 
-    <!--app:layout_behavior="com.bignerdranch.android.custombehavior.ShrinkBehavior"-->
-    <!--app:layout_behavior="com.bignerdranch.android.custombehavior.RotateBehavior"-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_scale"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|left|start"
+        android:src="@android:drawable/ic_menu_zoom"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        app:layout_behavior="engineering.uxd.example.custombehavior.ShrinkBehavior" />
+
+    <!--app:layout_behavior="engineering.uxd.example.custombehavior.ShrinkBehavior"-->
+    <!--app:layout_behavior="engineering.uxd.example.custombehavior.RotateBehavior"-->
 
 </android.support.design.widget.CoordinatorLayout>
