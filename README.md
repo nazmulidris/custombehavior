@@ -1,6 +1,6 @@
 # custombehavior
 
-Two examples of custom `Behavior`s with `FloatingActionButton` and `CoordinatorLayout`.
+Two examples of custom `Behavior` classes with `FloatingActionButton` and `CoordinatorLayout`.
 
 # Screenshot of app in action
 <img src="https://raw.githubusercontent.com/nazmulidris/custombehavior/master/docs/screenshot.gif" width="400">
