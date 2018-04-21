@@ -3,7 +3,7 @@
 Two examples of custom `Behavior`s with `FloatingActionButton` and `CoordinatorLayout`.
 
 # Screenshot of app in action
-<img src="https://raw.githubusercontent.com/nazmulidris/custombehavior/master/docs/screenshot.gif" width="200">
+<img src="https://raw.githubusercontent.com/nazmulidris/custombehavior/master/docs/screenshot.gif" width="400">
 
 #Relevant articles:
 - [Intercepting everything w/ CoordinatorLayout Behaviors](https://goo.gl/oLH8pm)
