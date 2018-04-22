@@ -28,9 +28,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fab.setOnClickListener {
-            make(container, "Hola - Fab pressed!", LENGTH_SHORT)
-                    .show()
+        fab_rotate.setOnClickListener {
+            make(container, "Hola - Fab pressed!", LENGTH_SHORT).show()
+        }
+
+        fab_shrink.setOnClickListener {
+            make(container, "Hola - Fab pressed!", LENGTH_SHORT).show()
         }
 
     }
