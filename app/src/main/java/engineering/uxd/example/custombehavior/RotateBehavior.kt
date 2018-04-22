@@ -23,6 +23,7 @@ import android.support.design.widget.Snackbar
 import android.util.AttributeSet
 import android.view.View
 import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.info
 
 class RotateBehavior(context: Context, attrs: AttributeSet) :
         CoordinatorLayout.Behavior<FloatingActionButton>(context, attrs),
@@ -55,6 +56,10 @@ class RotateBehavior(context: Context, attrs: AttributeSet) :
                 minOffset = Math.min(minOffset, it.getTranslationY() - it.getHeight())
             }
 
+        }
+
+        info {
+            "rotate.minOffset=$minOffset"
         }
 
         return minOffset

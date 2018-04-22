@@ -23,21 +23,11 @@
     tools:context="engineering.uxd.example.custombehavior.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_rotate"
+        android:id="@+id/fab"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_gravity="bottom|right|end"
+        android:layout_gravity="bottom|end"
         android:src="@android:drawable/ic_menu_rotate"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        app:layout_behavior="engineering.uxd.example.custombehavior.RotateBehavior" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_scale"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="bottom|left|start"
-        android:src="@android:drawable/ic_menu_zoom"
         android:layout_margin="8dp"
         android:clickable="true"
         app:layout_behavior="engineering.uxd.example.custombehavior.ShrinkBehavior" />

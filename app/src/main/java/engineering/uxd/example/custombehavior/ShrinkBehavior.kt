@@ -23,6 +23,7 @@ import android.support.design.widget.Snackbar
 import android.util.AttributeSet
 import android.view.View
 import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.info
 
 class ShrinkBehavior(context: Context, attrs: AttributeSet) :
         CoordinatorLayout.Behavior<FloatingActionButton>(context, attrs),
@@ -39,8 +40,10 @@ class ShrinkBehavior(context: Context, attrs: AttributeSet) :
                                         dependency: View): Boolean {
         val translationY = getFabTranslationYForSnackbar(parent, child)
         val percentComplete = -translationY / dependency.height
-        val scaleFactor = 1 - percentComplete
-
+        val scaleFactor = 1f - percentComplete
+        info {
+            "shrink.scaleFactor=$scaleFactor"
+        }
         child.scaleX = scaleFactor
         child.scaleY = scaleFactor
         return false
@@ -55,6 +58,10 @@ class ShrinkBehavior(context: Context, attrs: AttributeSet) :
             if (it is Snackbar.SnackbarLayout && parent.doViewsOverlap(fab, it)) {
                 minOffset = Math.min(minOffset, it.getTranslationY() - it.getHeight())
             }
+        }
+
+        info {
+            "shrink.minOffset=$minOffset"
         }
 
         return minOffset
