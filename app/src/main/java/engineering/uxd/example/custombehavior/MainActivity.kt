@@ -20,7 +20,6 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar.LENGTH_SHORT
 import android.support.design.widget.Snackbar.make
 import android.support.v7.app.AppCompatActivity
-import com.bignerdranch.android.custombehavior.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -15,7 +15,8 @@
   ~ limitations under the License.
   -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="engineering.uxd.example.custombehavior">
 
     <application
         android:allowBackup="true"
